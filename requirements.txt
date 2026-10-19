@@ -1,0 +1,14 @@
+torch==2.3.0
+torchvision==0.18.0
+# the vendored ALBEF/BLIP text encoders do not import under transformers>=5
+transformers==4.28.1
+timm==0.6.13
+einops>=0.6.0
+ruamel.yaml==0.15.80
+pillow==10.4.0
+numpy==1.24.4
+tqdm==4.66.4
+# imported at module load by models/blip_model/vit.py
+fairscale==0.4.13
+# xlsx output of eval_data_efficient_uap.py
+openpyxl
